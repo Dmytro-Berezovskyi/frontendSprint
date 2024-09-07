@@ -262,6 +262,8 @@ body {
     border: none;
     cursor: pointer;
     color: #19191C;
+    background-color: #FBFBFC;
+;
 }
 .discover__button:hover {
     font-weight: 700;
