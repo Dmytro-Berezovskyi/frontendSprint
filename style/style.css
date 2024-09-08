@@ -18,6 +18,9 @@ body {
     gap: 68px;
     align-items: center;
 }
+.burger-menu {
+    display: none;
+}
 .nav__list {
     display: flex;
     list-style: none;
@@ -485,9 +488,6 @@ body {
     }
     .header__box {
         gap: 28px;
-    }
-    .burger-menu {
-        display: none;
     }
     .nav__list {
         gap: 18px;
