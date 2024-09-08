@@ -317,8 +317,11 @@ body {
     line-height: 22px;
 }
 .discover__cards {
-    display: flex;
+    display: none;
     gap: 20px;
+}
+.discover__cards.active {
+    display: flex;
 }
 .discover__card-img {
     cursor: pointer;
