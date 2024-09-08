@@ -27,6 +27,33 @@ body {
     font-weight: 600;
     line-height: 22px;
 }
+.dropdown-menu__item {
+    position: relative;
+}
+.dropdown-wrapper {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+.dropdown-wrapper.active {
+    display: block;
+}
+.dropdown {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5px;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.dropdown > li {
+    cursor: pointer;
+    font-weight: 400;
+}
+.dropdown > li:hover {
+    color: #504DEE;
+}
 .link {
     color: #19191C;
     text-decoration: none;

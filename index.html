@@ -20,9 +20,19 @@
     
             <nav class="nav" role="navigation">
                 <ul class="nav__list">
-                    <li>
-                        <a class="link link__courses" role="button" aria-expanded="false" href="#">Courses</a>
+                    <li class="dropdown-menu__item">
+                        <a class="link link__dropdown" role="button" aria-expanded="false" href="#">Courses</a>
                         <img class="arrow-down" src="img/icon-arrow-down.svg" alt="down arrow to open a drop-down menu">
+                        <div class="dropdown-wrapper">
+                            <ul class="dropdown">
+                                <li>Illustrator</li>
+                                <li>Animator</li>
+                                <li>Marketer</li>
+                                <li>Programmer</li>
+                                <li>Designer</li>
+                                <li>Photographer</li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
                         <a class="link" href="#">Teachers</a>
@@ -34,9 +44,14 @@
             </nav>
         </div>
         <div class="btn-box">
-            <div class="language-box">
-                <a class="header__link" role="button" aria-expanded="false" href="#">En</a>
+            <div class="language-box dropdown-menu__item">
+                <a class="header__link link__dropdown" role="button" aria-expanded="false" href="#">En</a>
                 <img class="arrow-down" src="img/icon-arrow-down.svg" alt="down arrow to open a drop-down menu">
+                <div class="dropdown-wrapper">
+                    <ul class="dropdown">
+                        <li>Ua</li>
+                    </ul>
+                </div>
             </div>
             <a class="header__link" href="#">Sign In</a>
             <a class="header__btn" role="button" href="#">Trial free</a>
@@ -305,5 +320,7 @@
             </p>
         </div>
     </footer>
+
+<script src="main.js"></script>
 </body>
 </html>
