@@ -555,6 +555,9 @@ body {
     .sitemap__list {
         display: none;
     }
+    .sitemap__list.active {
+        display: block;
+    }
 }
 
 @media screen and (max-width:960px) {
@@ -567,6 +570,13 @@ body {
     }
     .arrow-right {
         width: 20px;
+    }
+    .sitemap {
+        gap: 0;
+    }
+    .sitemap__link {
+        font-size: 15px;
+        font-weight: 400;
     }
 }
 
@@ -597,6 +607,10 @@ body {
     }
     .sitemap__title {
         font-size: 12px;
+    }
+    .sitemap__link {
+        font-size: 10px;
+        font-weight: 400;
     }
     .offer__title {
         font-size: 30px;

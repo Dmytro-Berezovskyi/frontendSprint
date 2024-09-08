@@ -40,3 +40,16 @@ burgerBtn.addEventListener("click", function() {
     burgerBtn.classList.toggle('active');
     burgerDropdownWrapper.classList.toggle('active');
 })
+
+const sitemapTitle = document.querySelectorAll('.sitemap__title');
+const sitemapList = document.querySelectorAll('.sitemap__list');
+
+console.log(sitemapTitle);
+console.log(sitemapList);
+
+sitemapTitle.forEach((title, index) => {
+    title.addEventListener("click", function() {
+        title.classList.toggle('active');
+        sitemapList[index].classList.toggle('active');
+    })
+});
