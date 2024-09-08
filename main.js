@@ -31,4 +31,12 @@ discoverBtn.forEach(button => {
 
         button.classList.add('active');
     })
+});
+
+const burgerBtn = document.querySelector('.burger-menu');
+const burgerDropdownWrapper = document.querySelector('.burger__dropdown-wrapper');
+
+burgerBtn.addEventListener("click", function() {
+    burgerBtn.classList.toggle('active');
+    burgerDropdownWrapper.classList.toggle('active');
 })

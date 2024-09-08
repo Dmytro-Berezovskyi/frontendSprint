@@ -486,6 +486,9 @@ body {
     .header__box {
         gap: 28px;
     }
+    .burger-menu {
+        display: none;
+    }
     .nav__list {
         gap: 18px;
     }
@@ -558,26 +561,6 @@ body {
     .nav__list {
         display: none;
     }
-    .burger-menu {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 20px;
-        height: 12px;
-        border-top: 2px solid #19191C;
-        border-bottom: 2px solid #19191C;
-        position: relative;
-        cursor: pointer;
-    }
-    .burger-menu::before {
-        content: '';
-        position: absolute;
-        top: 40%;
-        width: 20px;
-        height: 12px;
-        border-top: 2px solid #19191C;
-        cursor: pointer;
-    }
     .discover__nav {
         flex-wrap: wrap;
         gap: 20px;
@@ -636,6 +619,58 @@ body {
 @media screen and (max-width:425px) {
     .btn-box {
         display: none;
+    }
+    .header__box {
+        width: 100%;
+        gap: 0;
+    }
+    .header__box-phone {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 20px;
+        height: 12px;
+        border-top: 2px solid #19191C;
+        border-bottom: 2px solid #19191C;
+        position: relative;
+        cursor: pointer;
+    }
+    .burger-menu::before {
+        content: '';
+        position: absolute;
+        top: 40%;
+        width: 20px;
+        height: 12px;
+        border-top: 2px solid #19191C;
+        cursor: pointer;
+    }
+    .burger__dropdown-wrapper {
+        display: none;
+        width: 90px;
+    }
+    .burger__dropdown-wrapper.active {
+        display: block;
+        margin-top: 15px;
+    }
+    .burger__dropdown {
+        list-style: none;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 20px;
+        padding: 0;
+    }
+    .burger__btn-trial {
+        color: #FBFBFC;
+        text-decoration: none;
+        background-color: #19191C;
+        padding: 8px;
     }
     .learn__counter-item {
         flex-basis: 100%;
