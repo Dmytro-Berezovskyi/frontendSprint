@@ -1,11 +1,22 @@
 const linkDropdown = document.querySelectorAll(".link__dropdown");
 const dropdownWrapper = document.querySelectorAll('.dropdown-wrapper');
+const dropdown = document.querySelectorAll('#dr-language li');
 
 linkDropdown.forEach((link, index) => {
     link.addEventListener("click", function() {
         dropdownWrapper[index].classList.toggle('active');
         linkDropdown[index].classList.toggle('active');
     })
+});
+
+dropdown[0].addEventListener("click", () => {
+    if (linkDropdown[1].textContent === "Ukr") {
+        linkDropdown[1].textContent = dropdown[0].textContent;
+        dropdown[0].textContent = "Ukr";
+    } else {
+        linkDropdown[1].textContent = dropdown[0].textContent;
+        dropdown[0].textContent = "En";
+    }
 });
 
 const discoverBtn= document.querySelectorAll(".discover__button");
@@ -43,9 +54,6 @@ burgerBtn.addEventListener("click", function() {
 
 const sitemapTitle = document.querySelectorAll('.sitemap__title');
 const sitemapList = document.querySelectorAll('.sitemap__list');
-
-console.log(sitemapTitle);
-console.log(sitemapList);
 
 sitemapTitle.forEach((title, index) => {
     title.addEventListener("click", function() {
